@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="Blog_files/style.css">
+</head>
+<body>
+    <div class="blog-container">
+        <h2>The Journey of a Computer Science Student in Coding</h2>
+        <br>
+        <section><main>
+            <p>
+                The journey of a computer science student in coding is a
+ blend of excitement, challenge, and growth. It begins with learning the
+ basics—understanding variables, loops, and functions. As they progress,
+ the complexity of coding increases, introducing them to data 
+structures, algorithms, and problem-solving techniques. With each line 
+of code written, mistakes made, and bugs fixed, they develop not just 
+technical skills but also a mindset of persistence and resilience. 
+Collaboration with peers, late-night debugging sessions, and the 
+satisfaction of finally getting a program to work become defining 
+experiences. Over time, they move from writing simple scripts to 
+building complex applications, contributing to open-source projects, and
+ exploring new languages and frameworks. The journey is not just about 
+mastering syntax but about thinking logically, solving real-world 
+problems, and continuously adapting to new technologies. Each milestone 
+achieved is a testament to their hard work and passion for coding, 
+leading them to become skilled developers ready to tackle the challenges
+ of the tech world.
+            </p>
+        </main>
+    </section>
+    <br>
+    <div>
+        <article>
+            <img src="Blog_files/my.jpg" alt="my image">
+        </article>
+    </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
