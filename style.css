@@ -1,44 +1,67 @@
-.main{
-    width:900px;
-    height:50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  background-color: beige;
+  width: 1000px;
+  height: 100px;
+  padding-top: 20px;
+  font-family:"Inter", sans-serif;
+  font-weight: 600;
+  margin:auto;
+}
+.hoverbox {
+  background-color: rgb(16, 125, 221);
+  text-align: justify;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  color: white;
+  line-height: 2;
+  border: 2px solid black;
+  margin: auto;
+  transition: 1.6s;
+}
+.hoverbox:hover{
     background-color: bisque;
+    color: black;
 }
-.row1c1{
-    width:200px;
-    height:50px;
-    background-color: aqua;
-    float: left;
-}
-.row1c2{
-    width:300px;
-    height:50px;
-    background-color: blueviolet;
-    float: left;
-}
-.row1c3{
-    width:400px;
-    height:50px;
-    background-color: aquamarine;
-    float:left;
-}
-.ref{
-    width:900px;
-    height:100px;
-    background-color: rgb(248, 166, 166);
-}
-.row2{
-    width:900px;
-    height:50px;
-}
-.row2c1{
-    width:400px;
-    height:50px;
-    float: left;
-    background-color: brown;
-}
-.row2c2{
+.slinks{
+    background-color: #fff;
+    color:black;
+    padding-top:5px;
+    text-align: center;
     width:500px;
-    height:50px;
-    float:left;
-    background-color: bisque;
+    height:40px;
+}
+.slinks i {
+    margin: 0 10px; 
+    font-size: 24px; 
+    padding:10px;
+    font-size: 20px;
+}
+.slinks i:hover{
+ color: red;
+  transition: 0.5s;
+}
+.container{
+  height: 1200px;
+  border: 2px solid red;
+  margin: 20px;
+  padding:30px;
+  display: grid;
+  row-gap: 10px;
+  column-gap: 8px;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px 200px 200px 200px 200px;
+  justify-content: space-around;
+  align-content: center;
+  /*align-items: flex-end;*/
+}
+.box{
+  border: 2px solid green;
+  padding: 12px;
 }
